@@ -89,7 +89,7 @@
 
 /* Responsive Styles */
 
-/* For tablets and smaller screens */
+/* For tablets and smaller screens. */ 
 @media (max-width: 768px) {
   .header {
     height: 8vh;

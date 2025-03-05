@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import axios from "../../Utils/axios"
+import axios from "../../Utils/axios" //
 import Requests from "../../Utils/Requests";
 import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
@@ -7,18 +7,18 @@ import "./Banner.css";
 
 
 function Banner() {
-  const [movie, setMovie] = useState({});
+  const [movie, setMovie] = useState({});// 
   useEffect(() => {
     (async () => {
       try {
-        // Fetch the movie
-        const request = await axios.get(Requests.fetchNetflixOriginals);
+        // Fetch the movie.
+        const request = await axios.get(Requests.fetchNetflixOriginals);// we declare request. Axios is imported from defined here. we modified and exported initially. 
         console.log(request);
         
         // Pick a random movie and set it to state..  The data will change everytime when refreshing it. 
         setMovie(
           request.data.results[
-            Math.floor(Math.random() * request.data.results.length)
+            Math.floor(Math.random() * request.data.results.length)// pick a random selection
           ]
         );
 
@@ -33,7 +33,7 @@ function Banner() {
  
   function truncateText(text, maxLength) {
     return text?.length > maxLength
-      ? text.substr(0, maxLength - 1) + "..."
+      ? text.substr(0, maxLength - 1) + "..." // 
       : text;
   }
 
@@ -54,7 +54,7 @@ function Banner() {
           <h1 className="banner__title">
             {movie?.title || movie?.name || movie?.original_name}
           </h1>
-          <h1 className="banner__description">
+          <h1 className="banner__description"> 
             {truncateText(movie?.overview, 150)}
           </h1>
 
@@ -68,7 +68,7 @@ function Banner() {
             </button>
           </div>
         </div>
-        <div className="banner__fadeBottom" />
+        <div className="banner__fadeBottom" /> 
       </div>
     </>
   );

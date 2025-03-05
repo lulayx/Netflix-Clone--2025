@@ -7,7 +7,7 @@ function RowList() {
       
       <Row
         title="NETFLIX ORIGINALS"
-        fetchUrl={Requests.fetchNetflixOriginals}// We use title and fetchURL to list all wanted items that we want to bring listed items in Request.jsx
+        fetchUrl={Requests.fetchNetflixOriginals}
         isLargeRow={true}
       />
       

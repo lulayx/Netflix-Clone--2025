@@ -39,18 +39,17 @@
 	background-color: rgba(51, 51, 51, 0.5);
     border: 2px solid transparent; /* Base border */
   border-radius: 4px; 
-  background-color: transparent; /* Background color of the button */
-  color: #fff; /* Text color */
-  font-size: 16px; /* Adjust as needed */
+  background-color: transparent; 
+  color: #fff; 
+  font-size: 16px; 
   cursor: pointer;
   overflow: hidden;
-  font-family: Arial, sans-serif; /* Adjust as needed */
-  transition: background-color 0.3s; /* Smooth background color transition on hover */
+  font-family: Arial, sans-serif; 
+  transition: background-color 0.3s; /* Smooth transition background color on  hover */
 }
 
 
-
-
+/* play button */
 .play{
     color: #000;
 	background-color: #fff;
@@ -70,19 +69,6 @@
 		#111
 	);
 }
-
-
-
-
-/* Keyframe animation for color cycling.... this is imported from Teddy's discussion */
-/* @keyframes colorCycle {
-
-    0% { border-color: rgba(255, 0, 0, 1); }   
-    25% { border-color: rgba(0, 255, 0, 1); }  
-    50% { border-color: rgba(0, 0, 255, 1); }  
-    75% { border-color: rgb(202, 202, 13); }
-    90% { border-color: rgb(255, 255, 255); }
-    100% { border-color: rgba(255, 0, 0, 1); }  */
 
 
 
